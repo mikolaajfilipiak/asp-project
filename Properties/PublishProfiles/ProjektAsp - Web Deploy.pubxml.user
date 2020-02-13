@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ten plik jest wykorzystywany przez proces publikowania/pakowania projektu internetowego. Możesz dostosować zachowanie tego procesu
+ poprzez edycję tego pliku MSBuild. Aby dowiedzieć się więcej o tym działaniu, odwiedź stronę https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALUzYOLS1fkikanjX/mYndgAAAAACAAAAAAAQZgAAAAEAACAAAADLm72/39XavGaFC6XTdsjjKjj3nnC3ein++J0EpJwMKgAAAAAOgAAAAAIAACAAAAAmy3FMh29Rqsgc/5qT4HLPtRg5jYar2R+Djj5yI6OSOIAAAADDRFNk6tGbG/CN77y55dn+CEa0od96/SXdF1A5PWehvILG7BA/de1/6DDPQYLN0blKtCbSIHVjQ+kpNnysZDJdPgtMaXCa7cYr/dcfDGAA0cqTWyAhdXDaHHpnDJqWNdSE9qRwvAwCVdu4qcgI/fQE05Jt/3ezH8UXv/jscjGWe0AAAABJSBrvdOD+uooiSXtu1elHrpsap3OJGG/A0kjIhDwx9SZYCVNW5baGgfQI3fckHYz8xOtDAY+p6vafoUqmcsGt</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:projektdbserverasp.database.windows.net,1433%3bInitial Catalog=Projekt_db%3bUser Id=admin40%40projektdbserverasp%3bPassword=Tymbark40%40</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="BookListMVC.Models.ApplicationDbContext">
+      <Value>Data Source=tcp:projektdbserverasp.database.windows.net,1433%3bInitial Catalog=Projekt_db%3bUser Id=admin40%40projektdbserverasp%3bPassword=Tymbark40%40</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
